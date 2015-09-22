@@ -34,7 +34,6 @@
   "dependencies": {
     "finf": "0.0.1",
     "glue-path": "0.0.4",
-    "minimist": "^1.2.0",
     "semafor": "0.0.1"
   }
 }
