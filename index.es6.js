@@ -7,13 +7,13 @@ export default function rename({dir, pattern, replace, verbose = false}) {
   let logger = semafor();
   if(dir == undefined) { 
     if(verbose) logger.fail("Undefined dir param");
-    return [new Error("Undefined dir param")];
+    return new Error("Undefined dir param");
   }
   dir = glue([process.cwd(), dir]);
   
   if(pattern == undefined) {
     if(verbose) logger.fail("Undefined pattern param");
-    return [new Error("Undefined pattern param")];
+    return new Error("Undefined pattern param");
   }
   if(replace == undefined) {
     if(verbose) logger.warn("Undefined replace param, using '' as default");
@@ -30,8 +30,10 @@ export default function rename({dir, pattern, replace, verbose = false}) {
   let final_list = [];
   for(let i=0; i<len;i++) {
     let f = list[i];
-    
-    let name = f.replace(pattern, replace);
+   
+    pattern = pattern.replace('*', '');
+    let regex = new RegExp(pattern);
+    let name = f.replace(regex, replace);
      
     let source_path = glue([dir, f]);
     let dest_path   = glue([dir, name]);
