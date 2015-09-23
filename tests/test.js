@@ -1,4 +1,4 @@
-import rename from '../index.js'
+import rename from '../index.es6.js'
 import fs from 'fs'
 import glue from 'glue-path'
 
