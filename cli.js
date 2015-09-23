@@ -12,6 +12,6 @@ var rename = require('./index.js');
 var result = rename({dir:argv[0], pattern:argv[1], replace:argv[2], verbose:(argv[3] && argv[3] == "--verbose"? true : false)});
 var err = result[0];
 if(err) return logger.fail(err.toString());
-logger.success("Files renamed!");
+logger.ok("Files renamed!");
 var list = result[1];
 console.log(list);
