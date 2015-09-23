@@ -11,6 +11,11 @@ npm install -g rename-files
 rename-files <relative_dir> <pattern> [replace] [--verbose]
 ```
 
+**Example**
+```bash
+rename-files ./ "_75.tmp" "_v.tmp" --verbose
+```
+
 **API**
 ```javascript
 import rename from 'rename-files'
