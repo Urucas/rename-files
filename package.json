@@ -1,6 +1,6 @@
 {
   "name": "rename-files",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Rename files in a directory using regular expressions",
   "main": "cli.js",
   "scripts": {
