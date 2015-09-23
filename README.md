@@ -14,6 +14,7 @@ rename-files <relative_dir> <pattern> [replace] [--verbose]
 **Example**
 ```bash
 rename-files ./ "_75.tmp" "_v.tmp" --verbose
+rename-files ./ "*_75.tmp" ".tmp" --verbose
 ```
 
 **API**
