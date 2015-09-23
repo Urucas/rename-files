@@ -1,4 +1,4 @@
-# rename-files
+# rename-files [![Build Status](https://travis-ci.org/Urucas/rename-files.svg?branch=master)](https://travis-ci.org/Urucas/rename-files)
 Rename files in a directory with regular expressions
 
 #Install 
